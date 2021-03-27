@@ -1,0 +1,223 @@
+# HELP process_cpu_time Total CPU seconds broken down by different states.
+# TYPE process_cpu_time counter
+process_cpu_time{state="system"} 0.81
+process_cpu_time{state="user"} 0.77
+process_cpu_time{state="wait"} 0
+# HELP process_disk_io Disk bytes transferred.
+# TYPE process_disk_io counter
+process_disk_io{direction="read"} 0
+process_disk_io{direction="write"} 32768
+# HELP process_memory_physical_usage The amount of physical memory in use.
+# TYPE process_memory_physical_usage gauge
+process_memory_physical_usage 5.306368e+07
+# HELP process_memory_virtual_usage Virtual memory size.
+# TYPE process_memory_virtual_usage gauge
+process_memory_virtual_usage 7.93686016e+08
+# HELP system_cpu_load_average_15m Average CPU Load over 15 minutes.
+# TYPE system_cpu_load_average_15m gauge
+system_cpu_load_average_15m 2.19
+# HELP system_cpu_load_average_1m Average CPU Load over 1 minute.
+# TYPE system_cpu_load_average_1m gauge
+system_cpu_load_average_1m 3.4
+# HELP system_cpu_load_average_5m Average CPU Load over 5 minutes.
+# TYPE system_cpu_load_average_5m gauge
+system_cpu_load_average_5m 2.5
+# HELP system_cpu_time Total CPU seconds broken down by different states.
+# TYPE system_cpu_time counter
+system_cpu_time{cpu="cpu0",state="idle"} 3987.38
+system_cpu_time{cpu="cpu0",state="interrupt"} 47.59
+system_cpu_time{cpu="cpu0",state="nice"} 0.26
+system_cpu_time{cpu="cpu0",state="softirq"} 21.24
+system_cpu_time{cpu="cpu0",state="steal"} 0
+system_cpu_time{cpu="cpu0",state="system"} 245.14
+system_cpu_time{cpu="cpu0",state="user"} 591.67
+system_cpu_time{cpu="cpu0",state="wait"} 40.29
+system_cpu_time{cpu="cpu1",state="idle"} 3953.93
+system_cpu_time{cpu="cpu1",state="interrupt"} 54.8
+system_cpu_time{cpu="cpu1",state="nice"} 0.28
+system_cpu_time{cpu="cpu1",state="softirq"} 21
+system_cpu_time{cpu="cpu1",state="steal"} 0
+system_cpu_time{cpu="cpu1",state="system"} 233.23
+system_cpu_time{cpu="cpu1",state="user"} 626.41
+system_cpu_time{cpu="cpu1",state="wait"} 41.7
+system_cpu_time{cpu="cpu2",state="idle"} 3975.11
+system_cpu_time{cpu="cpu2",state="interrupt"} 44.94
+system_cpu_time{cpu="cpu2",state="nice"} 0.49
+system_cpu_time{cpu="cpu2",state="softirq"} 20.46
+system_cpu_time{cpu="cpu2",state="steal"} 0
+system_cpu_time{cpu="cpu2",state="system"} 238.41
+system_cpu_time{cpu="cpu2",state="user"} 615.66
+system_cpu_time{cpu="cpu2",state="wait"} 40.86
+system_cpu_time{cpu="cpu3",state="idle"} 3925.53
+system_cpu_time{cpu="cpu3",state="interrupt"} 139.98
+system_cpu_time{cpu="cpu3",state="nice"} 0.36
+system_cpu_time{cpu="cpu3",state="softirq"} 23.59
+system_cpu_time{cpu="cpu3",state="steal"} 0
+system_cpu_time{cpu="cpu3",state="system"} 239.28
+system_cpu_time{cpu="cpu3",state="user"} 563.6
+system_cpu_time{cpu="cpu3",state="wait"} 38.69
+# HELP system_disk_io Disk bytes transferred.
+# TYPE system_disk_io counter
+system_disk_io{device="dm-0",direction="read"} 2.174896128e+09
+system_disk_io{device="dm-0",direction="write"} 6.53576192e+09
+system_disk_io{device="nvme0n1",direction="read"} 2.1786624e+09
+system_disk_io{device="nvme0n1",direction="write"} 6.53576192e+09
+system_disk_io{device="nvme0n1p1",direction="read"} 2.162688e+06
+system_disk_io{device="nvme0n1p1",direction="write"} 0
+system_disk_io{device="nvme0n1p2",direction="read"} 2.17536512e+09
+system_disk_io{device="nvme0n1p2",direction="write"} 6.53576192e+09
+# HELP system_disk_io_time Time disk spent activated. On Windows, this is calculated as the inverse of disk idle time.
+# TYPE system_disk_io_time counter
+system_disk_io_time{device="dm-0"} 329.587
+system_disk_io_time{device="nvme0n1"} 325.544
+system_disk_io_time{device="nvme0n1p1"} 0.044
+system_disk_io_time{device="nvme0n1p2"} 307.604
+# HELP system_disk_merged The number of disk reads merged into single physical disk access operations.
+# TYPE system_disk_merged counter
+system_disk_merged{device="dm-0",direction="read"} 0
+system_disk_merged{device="dm-0",direction="write"} 0
+system_disk_merged{device="nvme0n1",direction="read"} 13667
+system_disk_merged{device="nvme0n1",direction="write"} 4208
+system_disk_merged{device="nvme0n1p1",direction="read"} 0
+system_disk_merged{device="nvme0n1p1",direction="write"} 0
+system_disk_merged{device="nvme0n1p2",direction="read"} 13667
+system_disk_merged{device="nvme0n1p2",direction="write"} 4208
+# HELP system_disk_operation_time Time spent in disk operations.
+# TYPE system_disk_operation_time counter
+system_disk_operation_time{device="dm-0",direction="read"} 206.634
+system_disk_operation_time{device="dm-0",direction="write"} 671.395
+system_disk_operation_time{device="nvme0n1",direction="read"} 135.762
+system_disk_operation_time{device="nvme0n1",direction="write"} 455.258
+system_disk_operation_time{device="nvme0n1p1",direction="read"} 0.015
+system_disk_operation_time{device="nvme0n1p1",direction="write"} 0
+system_disk_operation_time{device="nvme0n1p2",direction="read"} 135.741
+system_disk_operation_time{device="nvme0n1p2",direction="write"} 360.303
+# HELP system_disk_operations Disk operations count.
+# TYPE system_disk_operations counter
+system_disk_operations{device="dm-0",direction="read"} 125885
+system_disk_operations{device="dm-0",direction="write"} 247794
+system_disk_operations{device="nvme0n1",direction="read"} 116590
+system_disk_operations{device="nvme0n1",direction="write"} 255144
+system_disk_operations{device="nvme0n1p1",direction="read"} 93
+system_disk_operations{device="nvme0n1p1",direction="write"} 0
+system_disk_operations{device="nvme0n1p2",direction="read"} 116443
+system_disk_operations{device="nvme0n1p2",direction="write"} 229507
+# HELP system_disk_pending_operations The queue size of pending I/O operations.
+# TYPE system_disk_pending_operations gauge
+system_disk_pending_operations{device="dm-0"} 0
+system_disk_pending_operations{device="nvme0n1"} 0
+system_disk_pending_operations{device="nvme0n1p1"} 0
+system_disk_pending_operations{device="nvme0n1p2"} 0
+# HELP system_disk_weighted_io_time Time disk spent activated multiplied by the queue length.
+# TYPE system_disk_weighted_io_time counter
+system_disk_weighted_io_time{device="dm-0"} 878.03
+system_disk_weighted_io_time{device="nvme0n1"} 685.464
+system_disk_weighted_io_time{device="nvme0n1p1"} 0.015
+system_disk_weighted_io_time{device="nvme0n1p2"} 496.044
+# HELP system_filesystem_inodes_usage FileSystem inodes used.
+# TYPE system_filesystem_inodes_usage gauge
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="ro",mountpoint="/conf",state="free",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="ro",mountpoint="/conf",state="used",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="ro",mountpoint="/host/sys/devices/virtual/dmi/id/product_name",state="free",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="ro",mountpoint="/host/sys/devices/virtual/dmi/id/product_name",state="used",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="ro",mountpoint="/host/sys/devices/virtual/dmi/id/product_uuid",state="free",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="ro",mountpoint="/host/sys/devices/virtual/dmi/id/product_uuid",state="used",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="rw",mountpoint="/dev/termination-log",state="free",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="rw",mountpoint="/dev/termination-log",state="used",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/hostname",state="free",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/hostname",state="used",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/hosts",state="free",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/hosts",state="used",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/resolv.conf",state="free",type="btrfs"} 0
+system_filesystem_inodes_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/resolv.conf",state="used",type="btrfs"} 0
+# HELP system_filesystem_usage Filesystem bytes used.
+# TYPE system_filesystem_usage gauge
+system_filesystem_usage{device="/dev/mapper/root",mode="ro",mountpoint="/conf",state="free",type="btrfs"} 1.0884470784e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="ro",mountpoint="/conf",state="reserved",type="btrfs"} 2.01166848e+08
+system_filesystem_usage{device="/dev/mapper/root",mode="ro",mountpoint="/conf",state="used",type="btrfs"} 1.4592305152e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="ro",mountpoint="/host/sys/devices/virtual/dmi/id/product_name",state="free",type="btrfs"} 1.0884470784e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="ro",mountpoint="/host/sys/devices/virtual/dmi/id/product_name",state="reserved",type="btrfs"} 2.01166848e+08
+system_filesystem_usage{device="/dev/mapper/root",mode="ro",mountpoint="/host/sys/devices/virtual/dmi/id/product_name",state="used",type="btrfs"} 1.4592305152e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="ro",mountpoint="/host/sys/devices/virtual/dmi/id/product_uuid",state="free",type="btrfs"} 1.0884470784e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="ro",mountpoint="/host/sys/devices/virtual/dmi/id/product_uuid",state="reserved",type="btrfs"} 2.01166848e+08
+system_filesystem_usage{device="/dev/mapper/root",mode="ro",mountpoint="/host/sys/devices/virtual/dmi/id/product_uuid",state="used",type="btrfs"} 1.4592305152e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="rw",mountpoint="/dev/termination-log",state="free",type="btrfs"} 1.0884470784e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="rw",mountpoint="/dev/termination-log",state="reserved",type="btrfs"} 2.01166848e+08
+system_filesystem_usage{device="/dev/mapper/root",mode="rw",mountpoint="/dev/termination-log",state="used",type="btrfs"} 1.4592305152e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/hostname",state="free",type="btrfs"} 1.0884470784e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/hostname",state="reserved",type="btrfs"} 2.01166848e+08
+system_filesystem_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/hostname",state="used",type="btrfs"} 1.4592305152e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/hosts",state="free",type="btrfs"} 1.0884470784e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/hosts",state="reserved",type="btrfs"} 2.01166848e+08
+system_filesystem_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/hosts",state="used",type="btrfs"} 1.4592305152e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/resolv.conf",state="free",type="btrfs"} 1.0884470784e+11
+system_filesystem_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/resolv.conf",state="reserved",type="btrfs"} 2.01166848e+08
+system_filesystem_usage{device="/dev/mapper/root",mode="rw",mountpoint="/etc/resolv.conf",state="used",type="btrfs"} 1.4592305152e+11
+# HELP system_memory_usage Bytes of memory in use.
+# TYPE system_memory_usage gauge
+system_memory_usage{state="buffered"} 2.801664e+06
+system_memory_usage{state="cached"} 4.910649344e+09
+system_memory_usage{state="free"} 6.61024768e+08
+system_memory_usage{state="slab_reclaimable"} 1.33844992e+08
+system_memory_usage{state="slab_unreclaimable"} 1.60268288e+08
+system_memory_usage{state="used"} 2.567376896e+09
+# HELP system_network_connections The number of connections.
+# TYPE system_network_connections gauge
+system_network_connections{protocol="tcp",state="CLOSE"} 0
+system_network_connections{protocol="tcp",state="CLOSE_WAIT"} 0
+system_network_connections{protocol="tcp",state="CLOSING"} 0
+system_network_connections{protocol="tcp",state="DELETE"} 0
+system_network_connections{protocol="tcp",state="ESTABLISHED"} 0
+system_network_connections{protocol="tcp",state="FIN_WAIT_1"} 0
+system_network_connections{protocol="tcp",state="FIN_WAIT_2"} 0
+system_network_connections{protocol="tcp",state="LAST_ACK"} 0
+system_network_connections{protocol="tcp",state="LISTEN"} 5
+system_network_connections{protocol="tcp",state="SYN_RECV"} 0
+system_network_connections{protocol="tcp",state="SYN_SENT"} 0
+system_network_connections{protocol="tcp",state="TIME_WAIT"} 12
+# HELP system_network_dropped The number of packets dropped.
+# TYPE system_network_dropped counter
+system_network_dropped{device="eth0",direction="receive"} 0
+system_network_dropped{device="eth0",direction="transmit"} 0
+system_network_dropped{device="lo",direction="receive"} 0
+system_network_dropped{device="lo",direction="transmit"} 0
+# HELP system_network_errors The number of errors encountered.
+# TYPE system_network_errors counter
+system_network_errors{device="eth0",direction="receive"} 0
+system_network_errors{device="eth0",direction="transmit"} 0
+system_network_errors{device="lo",direction="receive"} 0
+system_network_errors{device="lo",direction="transmit"} 0
+# HELP system_network_io The number of bytes transmitted and received.
+# TYPE system_network_io counter
+system_network_io{device="eth0",direction="receive"} 43368
+system_network_io{device="eth0",direction="transmit"} 55453
+system_network_io{device="lo",direction="receive"} 0
+system_network_io{device="lo",direction="transmit"} 0
+# HELP system_network_packets The number of packets transferred.
+# TYPE system_network_packets counter
+system_network_packets{device="eth0",direction="receive"} 496
+system_network_packets{device="eth0",direction="transmit"} 486
+system_network_packets{device="lo",direction="receive"} 0
+system_network_packets{device="lo",direction="transmit"} 0
+# HELP system_paging_faults The number of page faults.
+# TYPE system_paging_faults counter
+system_paging_faults{type="major"} 1.3082624e+07
+system_paging_faults{type="minor"} 6.9021966336e+10
+# HELP system_paging_operations The number of paging operations.
+# TYPE system_paging_operations counter
+system_paging_operations{direction="page_in",type="major"} 0
+system_paging_operations{direction="page_in",type="minor"} 8.7146496e+09
+system_paging_operations{direction="page_out",type="major"} 0
+system_paging_operations{direction="page_out",type="minor"} 2.614304768e+10
+# HELP system_paging_usage Swap (unix) or pagefile (windows) usage.
+# TYPE system_paging_usage gauge
+system_paging_usage{state="cached"} 0
+system_paging_usage{state="free"} 0
+system_paging_usage{state="used"} 0
+# HELP system_processes_count Total number of processes in each state.
+# TYPE system_processes_count gauge
+system_processes_count{status="blocked"} 0
+system_processes_count{status="running"} 4
+# HELP system_processes_created Total number of created processes.
+# TYPE system_processes_created counter
+system_processes_created 26979

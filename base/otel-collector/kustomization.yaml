@@ -1,0 +1,15 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+namespace: observability
+resources:
+  - deployment.k8s.yaml
+  - rbac.k8s.yaml
+  - service.k8s.yaml
+configMapGenerator:
+  - name: otel-collector
+    files:
+      - config/config.yaml
+images:
+  - name: otel/opentelemetry-collector
+    newName: otel/opentelemetry-collector-contrib
+    newTag: 0.22.0

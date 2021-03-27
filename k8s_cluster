@@ -1,0 +1,66 @@
+# HELP k8s_container_cpu_limit Maximum resource limit set for the container. See https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#resourcerequirements-v1-core for details
+# TYPE k8s_container_cpu_limit gauge
+k8s_container_cpu_limit 200
+# HELP k8s_container_cpu_request Resource requested for the container. See https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#resourcerequirements-v1-core for details
+# TYPE k8s_container_cpu_request gauge
+k8s_container_cpu_request 100
+# HELP k8s_container_ephemeral_storage_request Resource requested for the container. See https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#resourcerequirements-v1-core for details
+# TYPE k8s_container_ephemeral_storage_request gauge
+k8s_container_ephemeral_storage_request 1.048576e+08
+# HELP k8s_container_memory_limit Maximum resource limit set for the container. See https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#resourcerequirements-v1-core for details
+# TYPE k8s_container_memory_limit gauge
+k8s_container_memory_limit 1.7825792e+08
+# HELP k8s_container_memory_request Resource requested for the container. See https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#resourcerequirements-v1-core for details
+# TYPE k8s_container_memory_request gauge
+k8s_container_memory_request 7.340032e+07
+# HELP k8s_container_ready Whether a container has passed its readiness probe (0 for no, 1 for yes)
+# TYPE k8s_container_ready gauge
+k8s_container_ready 1
+# HELP k8s_container_restarts How many times the container has restarted in the recent past. This value is pulled directly from the K8s API and the value can go indefinitely high and be reset to 0 at any time depending on how your kubelet is configured to prune dead containers. It is best to not depend too much on the exact value but rather look at it as either == 0, in which case you can conclude there were no restarts in the recent past, or > 0, in which case you can conclude there were restarts in the recent past, and not try and analyze the value beyond that.
+# TYPE k8s_container_restarts gauge
+k8s_container_restarts 0
+# HELP k8s_daemonset_current_scheduled_nodes Number of nodes that are running at least 1 daemon pod and are supposed to run the daemon pod
+# TYPE k8s_daemonset_current_scheduled_nodes gauge
+k8s_daemonset_current_scheduled_nodes 1
+# HELP k8s_daemonset_desired_scheduled_nodes Number of nodes that should be running the daemon pod (including nodes currently running the daemon pod)
+# TYPE k8s_daemonset_desired_scheduled_nodes gauge
+k8s_daemonset_desired_scheduled_nodes 1
+# HELP k8s_daemonset_misscheduled_nodes Number of nodes that are running the daemon pod, but are not supposed to run the daemon pod
+# TYPE k8s_daemonset_misscheduled_nodes gauge
+k8s_daemonset_misscheduled_nodes 0
+# HELP k8s_daemonset_ready_nodes Number of nodes that should be running the daemon pod and have one or more of the daemon pod running and ready
+# TYPE k8s_daemonset_ready_nodes gauge
+k8s_daemonset_ready_nodes 1
+# HELP k8s_deployment_available Total number of available pods (ready for at least minReadySeconds) targeted by this deployment
+# TYPE k8s_deployment_available gauge
+k8s_deployment_available 1
+# HELP k8s_deployment_desired Number of desired pods in this deployment
+# TYPE k8s_deployment_desired gauge
+k8s_deployment_desired 1
+# HELP k8s_namespace_phase The current phase of namespaces (1 for active and 0 for terminating)
+# TYPE k8s_namespace_phase gauge
+k8s_namespace_phase 1
+# HELP k8s_node_condition_disk_pressure Whether this node is DiskPressure (1), not DiskPressure (0) or in an unknown state (-1)
+# TYPE k8s_node_condition_disk_pressure gauge
+k8s_node_condition_disk_pressure 0
+# HELP k8s_node_condition_memory_pressure Whether this node is MemoryPressure (1), not MemoryPressure (0) or in an unknown state (-1)
+# TYPE k8s_node_condition_memory_pressure gauge
+k8s_node_condition_memory_pressure 0
+# HELP k8s_node_condition_network_unavailable Whether this node is NetworkUnavailable (1), not NetworkUnavailable (0) or in an unknown state (-1)
+# TYPE k8s_node_condition_network_unavailable gauge
+k8s_node_condition_network_unavailable -1
+# HELP k8s_node_condition_pid_pressure Whether this node is PIDPressure (1), not PIDPressure (0) or in an unknown state (-1)
+# TYPE k8s_node_condition_pid_pressure gauge
+k8s_node_condition_pid_pressure 0
+# HELP k8s_node_condition_ready Whether this node is Ready (1), not Ready (0) or in an unknown state (-1)
+# TYPE k8s_node_condition_ready gauge
+k8s_node_condition_ready 1
+# HELP k8s_pod_phase Current phase of the pod (1 - Pending, 2 - Running, 3 - Succeeded, 4 - Failed, 5 - Unknown)
+# TYPE k8s_pod_phase gauge
+k8s_pod_phase 2
+# HELP k8s_replicaset_available Total number of available pods (ready for at least minReadySeconds) targeted by this replicaset
+# TYPE k8s_replicaset_available gauge
+k8s_replicaset_available 0
+# HELP k8s_replicaset_desired Number of desired pods in this replicaset
+# TYPE k8s_replicaset_desired gauge
+k8s_replicaset_desired 0

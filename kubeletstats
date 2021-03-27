@@ -1,0 +1,107 @@
+# HELP container_cpu_time 
+# TYPE container_cpu_time counter
+container_cpu_time 2.736624024
+# HELP container_cpu_utilization 
+# TYPE container_cpu_utilization gauge
+container_cpu_utilization 0.001466193
+# HELP container_filesystem_available 
+# TYPE container_filesystem_available gauge
+container_filesystem_available 1.08721647616e+11
+# HELP container_filesystem_capacity 
+# TYPE container_filesystem_capacity gauge
+container_filesystem_capacity 2.54968926208e+11
+# HELP container_filesystem_usage 
+# TYPE container_filesystem_usage gauge
+container_filesystem_usage 2732
+# HELP container_memory_available 
+# TYPE container_memory_available gauge
+container_memory_available 1.69680896e+08
+# HELP container_memory_major_page_faults 
+# TYPE container_memory_major_page_faults gauge
+container_memory_major_page_faults 0
+# HELP container_memory_page_faults 
+# TYPE container_memory_page_faults gauge
+container_memory_page_faults 51678
+# HELP container_memory_rss 
+# TYPE container_memory_rss gauge
+container_memory_rss 1.1759616e+07
+# HELP container_memory_usage 
+# TYPE container_memory_usage gauge
+container_memory_usage 1.2849152e+07
+# HELP container_memory_working_set 
+# TYPE container_memory_working_set gauge
+container_memory_working_set 1.163264e+07
+# HELP k8s_node_cpu_time 
+# TYPE k8s_node_cpu_time counter
+k8s_node_cpu_time 1250.080629514
+# HELP k8s_node_cpu_utilization 
+# TYPE k8s_node_cpu_utilization gauge
+k8s_node_cpu_utilization 0.412401449
+# HELP k8s_node_filesystem_available 
+# TYPE k8s_node_filesystem_available gauge
+k8s_node_filesystem_available 1.08721647616e+11
+# HELP k8s_node_filesystem_capacity 
+# TYPE k8s_node_filesystem_capacity gauge
+k8s_node_filesystem_capacity 2.54968926208e+11
+# HELP k8s_node_filesystem_usage 
+# TYPE k8s_node_filesystem_usage gauge
+k8s_node_filesystem_usage 1.4604699648e+11
+# HELP k8s_node_memory_available 
+# TYPE k8s_node_memory_available gauge
+k8s_node_memory_available 7.048343552e+09
+# HELP k8s_node_memory_major_page_faults 
+# TYPE k8s_node_memory_major_page_faults gauge
+k8s_node_memory_major_page_faults 0
+# HELP k8s_node_memory_page_faults 
+# TYPE k8s_node_memory_page_faults gauge
+k8s_node_memory_page_faults 74481
+# HELP k8s_node_memory_rss 
+# TYPE k8s_node_memory_rss gauge
+k8s_node_memory_rss 5.59910912e+08
+# HELP k8s_node_memory_usage 
+# TYPE k8s_node_memory_usage gauge
+k8s_node_memory_usage 1.513619456e+09
+# HELP k8s_node_memory_working_set 
+# TYPE k8s_node_memory_working_set gauge
+k8s_node_memory_working_set 1.09350912e+09
+# HELP k8s_node_network_errors 
+# TYPE k8s_node_network_errors counter
+k8s_node_network_errors{direction="receive",interface="eth0"} 0
+k8s_node_network_errors{direction="transmit",interface="eth0"} 0
+# HELP k8s_node_network_io 
+# TYPE k8s_node_network_io counter
+k8s_node_network_io{direction="receive",interface="eth0"} 9.0781287e+07
+k8s_node_network_io{direction="transmit",interface="eth0"} 1.0076575e+07
+# HELP k8s_pod_cpu_time 
+# TYPE k8s_pod_cpu_time counter
+k8s_pod_cpu_time 2.766090941
+# HELP k8s_pod_cpu_utilization 
+# TYPE k8s_pod_cpu_utilization gauge
+k8s_pod_cpu_utilization 0.002758982
+# HELP k8s_pod_filesystem_available 
+# TYPE k8s_pod_filesystem_available gauge
+k8s_pod_filesystem_available 1.08721647616e+11
+# HELP k8s_pod_filesystem_capacity 
+# TYPE k8s_pod_filesystem_capacity gauge
+k8s_pod_filesystem_capacity 2.54968926208e+11
+# HELP k8s_pod_filesystem_usage 
+# TYPE k8s_pod_filesystem_usage gauge
+k8s_pod_filesystem_usage 27308
+# HELP k8s_pod_memory_available 
+# TYPE k8s_pod_memory_available gauge
+k8s_pod_memory_available 1.69480192e+08
+# HELP k8s_pod_memory_major_page_faults 
+# TYPE k8s_pod_memory_major_page_faults gauge
+k8s_pod_memory_major_page_faults 0
+# HELP k8s_pod_memory_page_faults 
+# TYPE k8s_pod_memory_page_faults gauge
+k8s_pod_memory_page_faults 0
+# HELP k8s_pod_memory_rss 
+# TYPE k8s_pod_memory_rss gauge
+k8s_pod_memory_rss 1.1624448e+07
+# HELP k8s_pod_memory_usage 
+# TYPE k8s_pod_memory_usage gauge
+k8s_pod_memory_usage 1.3037568e+07
+# HELP k8s_pod_memory_working_set 
+# TYPE k8s_pod_memory_working_set gauge
+k8s_pod_memory_working_set 1.1821056e+07
